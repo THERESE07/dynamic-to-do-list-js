@@ -17,10 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create new task elements
         const listItem = document.createElement('li');
         listItem.textContent = taskText;
+        listItem.classList.add('task-item'); // Dynamically add a class to the list item
 
         const removeButton = document.createElement('button');
         removeButton.textContent = "Remove";
-        removeButton.className = 'remove-btn';
+        removeButton.classList.add('remove-btn'); // Dynamically add a class to the remove button
 
         // Add removal functionality to the remove button
         removeButton.onclick = () => {
